@@ -1,0 +1,54 @@
+{
+  "name": "render-pulse",
+  "version": "1.0.0",
+  "description": "Find render-blocking resources in a built static site: head scripts without defer/async, heavy blocking CSS, @import chains, third-party blocking resources without preconnect, document.write, parser-blocking body scripts, print CSS without media, missing critical CSS. SARIF, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "render-pulse": "bin/render-pulse.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "render-blocking",
+    "critical-css",
+    "performance",
+    "defer",
+    "async",
+    "fcp",
+    "lcp",
+    "core-web-vitals",
+    "static-site",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/render-pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/render-pulse/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/render-pulse#readme"
+}
