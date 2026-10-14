@@ -57,7 +57,7 @@
         <a class="btn" href="https://github.com/MrLouisWright/render-pulse">Source on GitHub</a>
       </div>
       <div class="badges">
-        <a href="https://github.com/MrLouisWright/render-pulse/pkgs/npm/render-pulse"><img src="https://img.shields.io/badge/GitHub%20Packages-%40mrlouiswright%2Frender-pulse-24292f?style=flat-square&amp;logo=github" alt="GitHub Packages: @mrlouiswright/render-pulse" height="20"></a><a href="https://github.com/MrLouisWright/render-pulse/releases"><img src="https://img.shields.io/github/v/tag/MrLouisWright/render-pulse?style=flat-square&amp;label=version" alt="Latest version tag" height="20"></a>
+        <a href="https://github.com/MrLouisWright/render-pulse/pkgs/npm/render-pulse"><img src="https://img.shields.io/badge/GitHub%20Packages-%40mrlouiswright%2Frender--pulse-24292f?style=flat-square&amp;logo=github" alt="GitHub Packages: @mrlouiswright/render-pulse" height="20"></a><a href="https://github.com/MrLouisWright/render-pulse/releases"><img src="https://img.shields.io/github/v/tag/MrLouisWright/render-pulse?style=flat-square&amp;label=version" alt="Latest version tag" height="20"></a>
         <a href="https://github.com/MrLouisWright/render-pulse/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/MrLouisWright/render-pulse/ci.yml?branch=main&amp;style=flat-square&amp;label=CI" alt="CI status" height="20"></a>
         <a href="https://github.com/MrLouisWright/render-pulse/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License: MIT" height="20"></a>
         <a href="https://github.com/MrLouisWright/render-pulse"><img src="https://img.shields.io/github/stars/MrLouisWright/render-pulse?style=flat-square" alt="GitHub stars for render-pulse" height="20"></a>
@@ -74,8 +74,8 @@
 <section class="sec" id="problem">
   <div class="wrap narrow">
     <h2><span class="h-idx">01</span> Why it exists</h2>
-    <p class="big">Nothing is painted until the browser has downloaded and parsed every render-blocking stylesheet and synchronous script in &lt;head&gt;. One forgotten &lt;script src&gt; without defer, a 200 kB framework stylesheet or an @import chain can add seconds to First Contentful Paint and LCP on mobile. render-pulse reads your static build output, works out which resources are actually on the critical path (respecting defer, async, type=module, media, disabled and alternate stylesheets) and reports each one with a concrete fix.</p>
-    <p class="big">CLI, library and GitHub Action. Node.js 18+, zero runtime dependencies. Works on any static build output (Astro, Next.js output: 'export', Eleventy, Hugo, Jekyll, Docusaurus, VitePress, plain HTML) and runs offline: point it at the folder your build writes. By Louis Wright.</p>
+    <p class="big">Nothing is painted until the browser has downloaded and parsed every render-blocking stylesheet and synchronous script in “&lt;head&gt;”. One forgotten “&lt;script src&gt;” without defer, a 200 kB framework stylesheet or an @import chain can add seconds to First Contentful Paint and LCP on mobile. render-pulse reads your static build output, works out which resources are actually on the critical path (respecting defer, async, “type=module”, media, disabled and alternate stylesheets) and reports each one with a concrete fix.</p>
+    <p class="big">CLI, library and GitHub Action. Node.js 18+, zero runtime dependencies. Works on any static build output (Astro, Next.js “output: 'export'”, Eleventy, Hugo, Jekyll, Docusaurus, VitePress, plain HTML) and runs offline: point it at the folder your build writes. By Louis Wright.</p>
   </div>
 </section>
 
