@@ -1,5 +1,7 @@
 # render-pulse
 
+[![npm version](https://img.shields.io/npm/v/render-pulse.svg)](https://www.npmjs.com/package/render-pulse) [![CI](https://github.com/MrLouisWright/render-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/render-pulse/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/render-pulse.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Find the CSS and JavaScript that block first paint in your built site, with the defer, async, media or critical-CSS fix for each.
 
 Nothing is painted until the browser has downloaded and parsed every render-blocking stylesheet and synchronous script in `<head>`. One forgotten `<script src>` without `defer`, a 200 kB framework stylesheet or an `@import` chain can add seconds to First Contentful Paint and LCP on mobile. `render-pulse` reads your static build output, works out which resources are actually on the critical path (respecting `defer`, `async`, `type=module`, `media`, `disabled` and alternate stylesheets) and reports each one with a concrete fix.
