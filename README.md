@@ -166,11 +166,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev render-pulse
+```
+
 ```js
 import { check, blocksRender } from "render-pulse";
 blocksRender({ rel: "stylesheet", media: "print" }); // false
 const report = check("dist", { maxCss: 30 * 1024 });
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("render-pulse")` from CommonJS.
 
 Types are included.
 
